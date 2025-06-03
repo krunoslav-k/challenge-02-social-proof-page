@@ -5,4 +5,70 @@
 
 html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.ratings-container, .description-container, .top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  margin: 100px;
+}
+
+.top-container {
+  justify-content: space-around;
+  width: 80%;
+}
+
+.description-container {
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: aqua;
+  width: 50%;
+}
+
+#title,
+.description {
+  color: hsl(332, 51%, 32%);
+}
+
+#title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.description {
+  padding-right: 4rem;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+}
+
+.ratings-container {
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  background-color: aquamarine;
+}
+
+.rating-card {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1.1rem 2.4rem;
+  margin: 0.5rem;
+  border-radius: 0.4rem;
+  position: relative;
+}
+.rating-card::before {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  background-image: url("./images/icon-star.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1rem;
+  height: 1rem;
 }/*# sourceMappingURL=styles.css.map */
