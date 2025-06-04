@@ -7,7 +7,7 @@ html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.ratings-container, .description-container, .top-container {
+.rating-card, .ratings-container, .description-container, .top-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,23 +52,41 @@ body {
   flex-direction: column;
   height: 100%;
   width: 50%;
-  background-color: aquamarine;
 }
 
 .rating-card {
-  background-color: hsl(330, 100%, 98%);
-  padding: 1.1rem 2.4rem;
+  justify-content: start;
+  background-color: hsl(318, 100%, 98%);
+  padding: 1.1rem 2.4rem 1.1rem 2rem;
   margin: 0.5rem;
   border-radius: 0.4rem;
+  width: 380px;
   position: relative;
 }
-.rating-card::before {
-  content: "";
-  position: absolute;
-  transform: translateY(-50%);
+.rating-card:nth-of-type(2) {
+  margin-left: 6rem;
+}
+.rating-card:nth-of-type(3) {
+  margin-left: 12rem;
+}
+
+.star {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
   background-image: url("./images/icon-star.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 1rem;
-  height: 1rem;
+}
+.star:not(:first-child) {
+  margin-left: 0.5rem;
+}
+.star:nth-child(5) {
+  margin-right: 2rem;
+}
+
+.text-rating {
+  font-size: 0.9rem;
+  color: hsl(332, 51%, 32%);
+  font-weight: 800;
 }/*# sourceMappingURL=styles.css.map */
