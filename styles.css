@@ -7,7 +7,7 @@ html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.rating-card, .ratings-container, .description-container, .top-container {
+.person-container, .review-card, .reviews-container, .rating-card, .ratings-container, .description-container, .top-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,7 @@ html {
 body {
   width: 100%;
   margin: 100px;
+  box-sizing: border-box;
 }
 
 .top-container {
@@ -26,7 +27,6 @@ body {
 .description-container {
   flex-direction: column;
   align-items: flex-start;
-  background-color: aqua;
   width: 50%;
 }
 
@@ -39,7 +39,7 @@ body {
   font-size: 2.5rem;
   font-weight: 800;
   width: 70%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 .description {
@@ -89,4 +89,51 @@ body {
   font-size: 0.9rem;
   color: hsl(332, 51%, 32%);
   font-weight: 800;
+}
+
+.reviews-container {
+  justify-content: space-between;
+  width: 80%;
+  margin: 50px 0;
+}
+
+.review-card {
+  flex-direction: column;
+  background-color: hsl(332, 51%, 32%);
+  border-radius: 7px;
+  width: 330px;
+  height: 230px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.review-card:nth-of-type(2) {
+  margin-top: 40px;
+}
+.review-card:nth-of-type(3) {
+  margin-top: 80px;
+}
+
+.person-container {
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.person-pic {
+  height: 2.6rem;
+  border-radius: 50%;
+}
+
+.person-name,
+.person-title {
+  margin-left: 20px;
+}
+
+.person-name,
+.review-text {
+  color: hsl(318, 100%, 98%);
+}
+
+.person-title {
+  color: hsl(330, 50%, 57%);
 }/*# sourceMappingURL=styles.css.map */
