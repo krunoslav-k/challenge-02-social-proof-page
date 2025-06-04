@@ -32,7 +32,7 @@ body {
 
 #title,
 .description {
-  color: hsl(332, 51%, 32%);
+  color: #521f51;
 }
 
 #title {
@@ -56,7 +56,7 @@ body {
 
 .rating-card {
   justify-content: start;
-  background-color: hsl(318, 100%, 98%);
+  background-color: #f7f2f8;
   padding: 1.1rem 2.4rem 1.1rem 2rem;
   margin: 0.5rem;
   border-radius: 0.4rem;
@@ -87,7 +87,7 @@ body {
 
 .text-rating {
   font-size: 0.9rem;
-  color: hsl(332, 51%, 32%);
+  color: #521f51;
   font-weight: 800;
 }
 
@@ -99,7 +99,7 @@ body {
 
 .review-card {
   flex-direction: column;
-  background-color: hsl(332, 51%, 32%);
+  background-color: #521f51;
   border-radius: 7px;
   width: 330px;
   height: 230px;
@@ -131,9 +131,9 @@ body {
 
 .person-name,
 .review-text {
-  color: hsl(318, 100%, 98%);
+  color: #ecd4ec;
 }
 
 .person-title {
-  color: hsl(330, 50%, 57%);
+  color: #ca5793;
 }/*# sourceMappingURL=styles.css.map */
