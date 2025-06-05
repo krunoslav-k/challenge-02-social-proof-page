@@ -136,4 +136,27 @@ body {
 
 .person-title {
   color: #ca5793;
+}
+
+@media (max-width: 425px) {
+  body {
+    margin: 0;
+  }
+  .top-container {
+    flex-wrap: wrap;
+    background-color: aqua;
+  }
+  .description-container {
+    width: 100%;
+  }
+  #title,
+  .description {
+    align-self: center;
+  }
+  .rating-card:nth-of-type(2) {
+    margin-left: 0;
+  }
+  .rating-card:nth-of-type(3) {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
