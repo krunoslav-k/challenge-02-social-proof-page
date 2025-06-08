@@ -4,7 +4,7 @@
 @import "./base/abstracts";
 
 body {
-  padding: 12vh 10vh 1vh 12vh;
+  padding: 12vh 10vw 1vh 12vw;
   box-sizing: border-box;
   background-image: url("./images/bg-pattern-top-desktop.svg"),
     url("./images/bg-pattern-bottom-desktop.svg");
@@ -148,8 +148,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 6vh 5vw 1vh 6vw;
+  }
+
   .rating-card {
-    @extend %flex;
     flex-direction: column;
     width: 22rem;
     padding: 1rem 1rem;
@@ -208,7 +211,6 @@ body {
   }
 
   .rating-card {
-    @extend %flex;
     flex-direction: column;
     width: 22rem;
     padding: 1rem 1rem;
