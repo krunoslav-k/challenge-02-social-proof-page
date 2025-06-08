@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  padding: 100px 100px 20px 100px;
+  padding: 12vh 10vh 1vh 12vh;
   box-sizing: border-box;
   background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
   background-repeat: no-repeat, no-repeat;
@@ -24,13 +24,14 @@ body {
 
 .top-container {
   justify-content: space-around;
-  width: 80%;
+  width: 100%;
 }
 
 .description-container {
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
+  background-color: aqua;
+  flex: 1;
 }
 
 #title,
@@ -53,8 +54,9 @@ body {
 
 .ratings-container {
   flex-direction: column;
-  height: 100%;
-  width: 50%;
+  background-color: aquamarine;
+  flex: 1.25;
+  min-width: 0;
 }
 
 .rating-card {
@@ -63,7 +65,7 @@ body {
   padding: 1.1rem 2.4rem 1.1rem 2rem;
   margin: 0.5rem;
   border-radius: 0.4rem;
-  width: 380px;
+  width: 28vw;
   position: relative;
 }
 .rating-card:nth-of-type(2) {
@@ -147,7 +149,18 @@ body {
   padding: 0.25rem;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+  .rating-card {
+    margin-left: 0;
+  }
+  .rating-card:nth-of-type(2) {
+    margin-left: 0;
+  }
+  .rating-card:nth-of-type(3) {
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
   body {
     padding: 4rem 1.5rem 1rem 1.5rem;
     background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
@@ -157,7 +170,7 @@ body {
   }
   .top-container {
     width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .description-container {
     padding: 1rem;
@@ -177,7 +190,7 @@ body {
   }
   .rating-card {
     flex-direction: column;
-    width: 300px;
+    width: 22rem;
     padding: 1rem 1rem;
     margin: 0.5rem 0;
   }
