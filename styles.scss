@@ -49,6 +49,7 @@ body {
   flex-direction: column;
   flex: 1.25;
   min-width: 0;
+  margin-top: 5rem;
 }
 
 .rating-card {
@@ -92,7 +93,9 @@ body {
 
 .reviews-container {
   @extend %flex;
-  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  justify-content: stretch;
   width: 100%;
   margin: 50px 0;
 }
@@ -102,8 +105,8 @@ body {
   flex-direction: column;
   background-color: $rose-800;
   border-radius: 7px;
+  flex: 1;
   width: 24vw;
-  min-width: 10vw;
   padding: 30px;
   box-sizing: border-box;
   &:nth-of-type(2) {
@@ -174,6 +177,23 @@ body {
     }
     &:nth-of-type(3) {
       margin-left: 0;
+    }
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .review-card {
+    width: 100%;
+    &:nth-of-type(2) {
+      margin-top: 1.25rem;
+    }
+    &:nth-of-type(3) {
+      margin-top: 1.25rem;
     }
   }
 }
